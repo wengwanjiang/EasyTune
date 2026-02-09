@@ -37,9 +37,8 @@ This repository offers the official implementation for the paper.
 
 ## News
 
-- **[2025/12]** Training and evaluation code has been released!
-- **[2025/12]** Pre-trained model weights have been released!
-- **[2025/01]** **EasyTune** has been officially accepted by *ICLR 2026*!
+- **[2026/02]** Training and evaluation code has been released!
+- **[2026/01]** 🎉 **EasyTune** has been accepted by ICLR‘26. To explore accepted papers from ICLR’26, please see [ICLR Abstract](https://hongsong-wang.github.io/ICLR2026_Abstract/) and [Paper Portal](https://hongsong-wang.github.io/CV_Paper_Portal/).
 
 ## Plan
 
