@@ -3,7 +3,7 @@
 <h1 align="center"><strong>EasyTune: Efficient Step-Aware Fine-Tuning for Diffusion-Based Motion Generation</strong></h1>
   <p align="center">
    <a href='https://xiaofeng-tan.github.io/' target='_blank'>Xiaofeng Tan*<sup>1</sup></a>&emsp;
-   Wanjiang Weng*<sup>1</sup>&emsp;
+    <a href='https://wengwanjiang.github.io/' target='_blank'>Wanjiang Weng*<sup>1</sup></a>&emsp;
    Haodong Lei<sup>1</sup>&emsp;
    Hongsong Wang<sup>&dagger;1</sup>&emsp;
     <br>
