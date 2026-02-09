@@ -2,12 +2,12 @@
 
 <h1 align="center"><strong>EasyTune: Efficient Step-Aware Fine-Tuning for Diffusion-Based Motion Generation</strong></h1>
   <p align="center">
-   <a href='https://xiaofeng-tan.github.io/' target='_blank'>Xiaofeng Tan*<sup>1</sup></a>&emsp;
-    <a href='https://wengwanjiang.github.io/' target='_blank'>Wanjiang Weng*<sup>1</sup></a>&emsp;
-   Haodong Lei<sup>1</sup>&emsp;
-   Hongsong Wang<sup>&dagger;1</sup>&emsp;
+   <a href='https://xiaofeng-tan.github.io/' target='_blank'>Xiaofeng Tan*</a>&emsp;
+    <a href='https://wengwanjiang.github.io/' target='_blank'>Wanjiang Weng*</a>&emsp;
+   Haodong Lei&emsp;
+   Hongsong Wang<sup>&dagger;</sup>&emsp;
     <br>
-    <sup>1</sup>PALM Lab, Southeast University&emsp;
+    PALM Lab, Southeast University&emsp;
     <br>
     *Equal contribution &emsp;
     <sup>&dagger;</sup>Corresponding author
@@ -47,6 +47,7 @@ This repository offers the official implementation for the paper.
 - [ ] Release evaluation code.
 - [ ] Release pre-trained model weights.
 - [x] Release environment guidance.
+- [ ] Release MotionRFT.
 
 ## Model Zoo
 
