@@ -1,29 +1,39 @@
+<div align="center">
+
 <h1 align="center"><strong>EasyTune: Efficient Step-Aware Fine-Tuning for Diffusion-Based Motion Generation</strong></h1>
-<p align="center">
- <a href='https://xiaofeng-tan.github.io/' target='_blank'>Xiaofeng Tan<sup>*</sup></a>&emsp;
- <a href='https://github.com/wengwanjiang' target='_blank'>Wanjiang Weng<sup>*</sup></a>&emsp;
- Haodong Lei&emsp;
- Hongsong Wang<sup>&dagger;</sup>&emsp;
-  <br>
-  *Equal Contribution&emsp;
-  &dagger;Corresponding Author
+  <p align="center">
+   <a href='https://xiaofeng-tan.github.io/' target='_blank'>Xiaofeng Tan*<sup>1</sup></a>&emsp;
+   Wanjiang Weng*<sup>1</sup>&emsp;
+   Haodong Lei<sup>1</sup>&emsp;
+   Hongsong Wang<sup>&dagger;1</sup>&emsp;
+    <br>
+    <sup>1</sup>PALM Lab, Southeast University&emsp;
+    <br>
+    *Equal contribution &emsp;
+    <sup>&dagger;</sup>Corresponding author
+    <br>
+    For any questions, please contact Xiaofeng Tan (xiaofengtan@seu.edu.cn) or Wanjiang Weng (wjweng@seu.edu.cn).
+
+  </p>
 </p>
 
 <p align="center">
-  <a href="https://openreview.net/forum?id=Fy1EoIaAzQ">
-    <img src="https://img.shields.io/badge/ICLR-2026-blue" alt="ICLR 2026">
+  <a href="https://iclr.cc/virtual/2026/poster/">
+    <img src="https://img.shields.io/badge/ICLR-2026-9065CA" alt="ICLR 2026">
   </a>
   <a href="https://arxiv.org/abs/">
     <img src="https://img.shields.io/badge/Paper-PDF-yellow?style=flat&logo=arXiv&logoColor=yellow" alt="Paper PDF on arXiv">
   </a>
-  <a href='https://xiaofeng-tan.github.io/projects/EasyTune/index.html'>
-    <img src='https://img.shields.io/badge/Project-Page-%23df5b46?style=flat&logo=Google%20chrome&logoColor=%23df5b46'>
+  <a href="https://xiaofeng-tan.github.io/projects/EasyTune/">
+    <img src="https://img.shields.io/badge/Project-Page-green?style=flat&logo=Google%20chrome&logoColor=green" alt="Project Page">
   </a>
 </p>
 
-> **TL;DR:** We propose **EasyTune**, an *efficient step-aware fine-tuning framework* for diffusion-based motion generation, which significantly reduces memory and computation cost while maintaining high-quality text-motion alignment.
+</div>
 
-This repository offers the official implementation for the paper. If you have any questions, feel free to contact Xiaofeng Tan (xiaofengtan@seu.edu.cn) or Wanjiang Weng (wjweng@seu.edu.cn).
+> **TL;DR:** We propose **EasyTune**, a reinforcement fine-tuning framework for diffusion models that decouples recursive dependencies and enables (1) dense and effective optimization, (2) memory-efficient training, and (3) fine-grained alignment.
+
+This repository offers the official implementation for the paper. 
 
 ## News
 
