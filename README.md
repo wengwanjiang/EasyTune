@@ -47,7 +47,7 @@ This repository offers the official implementation for the paper.
 - [ ] Release evaluation code.
 - [ ] Release pre-trained model weights.
 - [x] Release environment guidance.
-- [ ] Release MotionRFT.
+- [ ] 😚 Release Extended Version, MotionRFT.
 
 ## Model Zoo
 
