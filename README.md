@@ -21,7 +21,7 @@
   <a href="https://iclr.cc/virtual/2026/poster/">
     <img src="https://img.shields.io/badge/ICLR-2026-9065CA" alt="ICLR 2026">
   </a>
-  <a href="https://arxiv.org/abs/">
+  <a href="https://www.arxiv.org/abs/2602.07967">
     <img src="https://img.shields.io/badge/Paper-PDF-yellow?style=flat&logo=arXiv&logoColor=yellow" alt="Paper PDF on arXiv">
   </a>
   <a href="https://xiaofeng-tan.github.io/projects/EasyTune/">
