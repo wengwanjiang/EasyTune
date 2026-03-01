@@ -31,14 +31,17 @@
 
 </div>
 
+> 🔥 We have released **[MotionRFT](https://xiaofeng-tan.github.io/projects/MotionRFT/)**, an extended version of EasyTune, with comprehensive code and documentation. [[Project Page](https://xiaofeng-tan.github.io/projects/MotionRFT/)] [[Code & Docs](https://github.com/Xiaofeng-Tan/MotionRFT)]
+
 > **TL;DR:** We propose **EasyTune**, a reinforcement fine-tuning framework for diffusion models that decouples recursive dependencies and enables (1) dense and effective optimization, (2) memory-efficient training, and (3) fine-grained alignment.
 
 This repository offers the official implementation for the paper. 
 
 ## News
 
+- **[2026/03]** 🔥 We have released **[MotionRFT](https://xiaofeng-tan.github.io/projects/MotionRFT/)**, an extended version of EasyTune, with comprehensive code and documentation. [[Project Page](https://xiaofeng-tan.github.io/projects/MotionRFT/)] [[Code & Docs](https://github.com/Xiaofeng-Tan/MotionRFT)]
 - **[2026/02]** Training and evaluation code has been released!
-- **[2026/01]** 🎉 **EasyTune** has been accepted by ICLR‘26. To explore accepted papers from ICLR’26, please see [ICLR Abstract](https://hongsong-wang.github.io/ICLR2026_Abstract/) and [Paper Portal](https://hongsong-wang.github.io/CV_Paper_Portal/).
+- **[2026/01]** 🎉 **EasyTune** has been accepted by ICLR'26. To explore accepted papers from ICLR'26, please see [ICLR Abstract](https://hongsong-wang.github.io/ICLR2026_Abstract/) and [Paper Portal](https://hongsong-wang.github.io/CV_Paper_Portal/).
 
 ## Plan
 
@@ -47,7 +50,7 @@ This repository offers the official implementation for the paper.
 - [ ] Release evaluation code.
 - [ ] Release pre-trained model weights.
 - [x] Release environment guidance.
-- [ ] 😚 Release Extended Version, MotionRFT.
+- [x] 😚 Release Extended Version, [MotionRFT](https://github.com/Xiaofeng-Tan/MotionRFT).
 
 ## Model Zoo
 

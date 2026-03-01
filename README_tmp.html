@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>README.md</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+html,footer,header{
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Custom MD PDF CSS
+ */
+html,footer,header{
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+
+ }
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+<link rel="stylesheet" href="file:///Users/tanxiaofeng/Documents/GitHub/EasyTune/R%3A%5C2.Travail%5C1.Enseignement%5CCours%5C_1.Outils%5C2.Developpement%5C1.SCSS%5Cmain.css" type="text/css"><link rel="stylesheet" href="file:///Users/tanxiaofeng/Documents/GitHub/EasyTune/D%3A%5Crdaros%5CCours%5C_1.Outils%5C2.Developpement%5C1.SCSS%5Cmain.css" type="text/css">
+</head>
+
+<body>
+    <div align="center">
+</div><h1 align="center"><strong>EasyTune: Efficient Step-Aware Fine-Tuning for Diffusion-Based Motion Generation</strong></h1>
+  <p align="center">
+   <a href="https://xiaofeng-tan.github.io/" target="_blank">Xiaofeng Tan*</a>&#x2003;
+    <a href="https://wengwanjiang.github.io/" target="_blank">Wanjiang Weng*</a>&#x2003;
+   Haodong Lei&#x2003;
+   Hongsong Wang<sup>&#x2020;</sup>&#x2003;
+    <br>
+    PALM Lab, Southeast University&#x2003;
+    <br>
+    *Equal contribution &#x2003;
+    <sup>&#x2020;</sup>Corresponding author
+    <br>
+    For any questions, please contact Xiaofeng Tan (xiaofengtan@seu.edu.cn) or Wanjiang Weng (wjweng@seu.edu.cn).
+</p>  <p></p>
+<p></p>
+<p align="center">
+  <a href="https://iclr.cc/virtual/2026/poster/">
+    <img src="https://img.shields.io/badge/ICLR-2026-9065CA" alt="ICLR 2026">
+  </a>
+  <a href="https://www.arxiv.org/abs/2602.07967">
+    <img src="https://img.shields.io/badge/Paper-PDF-yellow?style=flat&amp;logo=arXiv&amp;logoColor=yellow" alt="Paper PDF on arXiv">
+  </a>
+  <a href="https://xiaofeng-tan.github.io/projects/EasyTune/">
+    <img src="https://img.shields.io/badge/Project-Page-green?style=flat&amp;logo=Google%20chrome&amp;logoColor=green" alt="Project Page">
+  </a>
+</p>
+
+<blockquote>
+<p>🔥 We have released <strong><a href="https://xiaofeng-tan.github.io/projects/MotionRFT/">MotionRFT</a></strong>, an extended version of EasyTune, with comprehensive code and documentation. [<a href="https://xiaofeng-tan.github.io/projects/MotionRFT/">Project Page</a>] [<a href="https://github.com/Xiaofeng-Tan/MotionRFT">Code &amp; Docs</a>]</p>
+</blockquote>
+<blockquote>
+<p><strong>TL;DR:</strong> We propose <strong>EasyTune</strong>, a reinforcement fine-tuning framework for diffusion models that decouples recursive dependencies and enables (1) dense and effective optimization, (2) memory-efficient training, and (3) fine-grained alignment.</p>
+</blockquote>
+<p>This repository offers the official implementation for the paper.</p>
+<h2 id="news">News</h2>
+<ul>
+<li><strong>[2026/03]</strong> 🔥 We have released <strong><a href="https://xiaofeng-tan.github.io/projects/MotionRFT/">MotionRFT</a></strong>, an extended version of EasyTune, with comprehensive code and documentation. [<a href="https://xiaofeng-tan.github.io/projects/MotionRFT/">Project Page</a>] [<a href="https://github.com/Xiaofeng-Tan/MotionRFT">Code &amp; Docs</a>]</li>
+<li><strong>[2026/02]</strong> Training and evaluation code has been released!</li>
+<li><strong>[2026/01]</strong> 🎉 <strong>EasyTune</strong> has been accepted by ICLR'26. To explore accepted papers from ICLR'26, please see <a href="https://hongsong-wang.github.io/ICLR2026_Abstract/">ICLR Abstract</a> and <a href="https://hongsong-wang.github.io/CV_Paper_Portal/">Paper Portal</a>.</li>
+</ul>
+<h2 id="plan">Plan</h2>
+<ul>
+<li><input type="checkbox" id="checkbox0" checked="true"><label for="checkbox0">Release paper.</label></li>
+<li><input type="checkbox" id="checkbox1"><label for="checkbox1">Release training code.</label></li>
+<li><input type="checkbox" id="checkbox2"><label for="checkbox2">Release evaluation code.</label></li>
+<li><input type="checkbox" id="checkbox3"><label for="checkbox3">Release pre-trained model weights.</label></li>
+<li><input type="checkbox" id="checkbox4" checked="true"><label for="checkbox4">Release environment guidance.</label></li>
+<li><input type="checkbox" id="checkbox5" checked="true"><label for="checkbox5">😚 Release Extended Version, </label><a href="https://github.com/Xiaofeng-Tan/MotionRFT">MotionRFT</a>.</li>
+</ul>
+<h2 id="model-zoo">Model Zoo</h2>
+<table>
+  <tr>
+    <th>Model</th>
+    <th>Dataset</th>
+    <th>Download</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td rowspan="2"> Fine-tuned Step-Aware Preference Model (SPM)</td>
+    <td>HumanML3D</td>
+    <td>
+      <a href="https://1drv.ms/">OneDrive</a> /
+      <a href="https://pan.baidu.com/">BaiduNetDisk</a>
+    </td>
+    <td>Text-motion retrieval reward model</td>
+  </tr>
+  <tr>
+    <td>KIT-ML</td>
+    <td>
+      <a href="https://1drv.ms/">OneDrive</a> /
+      <a href="https://pan.baidu.com/">BaiduNetDisk</a>
+    </td>
+    <td>Text-motion retrieval reward model</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Fine-tuned MLD</td>
+    <td>HumanML3D</td>
+    <td>
+      <a href="https://1drv.ms/">OneDrive</a> /
+      <a href="https://pan.baidu.com/">BaiduNetDisk</a>
+    </td>
+    <td>MLD fine-tuned with EasyTune</td>
+  </tr>
+</table>
+<h2 id="environment-setup">Environment Setup</h2>
+<h3 id="1-create-conda-environment">1. Create Conda Environment</h3>
+<pre class="hljs"><code><div>conda create -n easytune python=3.10 -y
+conda activate easytune
+</div></code></pre>
+<h3 id="2-install-dependencies">2. Install Dependencies</h3>
+<pre class="hljs"><code><div><span class="hljs-comment"># Install PyTorch (CUDA 11.8)</span>
+pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118
+
+<span class="hljs-comment"># Install other dependencies</span>
+pip install -r requirements.txt
+</div></code></pre>
+<h3 id="3-prepare-pre-trained-models">3. Prepare Pre-trained Models</h3>
+<p>Download and place the following models in the <code>deps/</code> directory:</p>
+<pre class="hljs"><code><div>deps/
+├── sentence-t5-large/       # Sentence-T5 for text encoding
+├── clip-vit-large-patch14/  # CLIP model
+├── distilbert-base-uncased/
+├── glove/                   # GloVe word embeddings
+├── smpl/                    # SMPL model
+└── t2m/                     # Text-to-Motion evaluation model
+</div></code></pre>
+<h3 id="4-prepare-dataset">4. Prepare Dataset</h3>
+<p>Download the <a href="https://github.com/EricGuo5513/HumanML3D">HumanML3D</a> or <a href="https://motion-annotation.humanoids.kit.edu/dataset/">KIT-ML</a> dataset and place in the <code>datasets/</code> directory:</p>
+<pre class="hljs"><code><div>datasets/
+└── humanml3d/
+    ├── new_joint_vecs/
+    ├── new_joints/
+    ├── texts/
+    └── ...
+</div></code></pre>
+<h2 id="training">Training</h2>
+<h3 id="step-1-train-step-aware-preference-model-spm">Step 1: Train Step-Aware Preference Model (SPM)</h3>
+<p>The SPM learns a step-aware text-motion alignment reward signal used to guide fine-tuning.</p>
+<pre class="hljs"><code><div><span class="hljs-comment"># Train SPM on HumanML3D</span>
+bash run.sh 0 spm
+
+<span class="hljs-comment"># Or run directly with custom parameters</span>
+CUDA_VISIBLE_DEVICES=0 python -m train_spm \
+    --cfg configs/spm_h3d.yaml \
+    --NoiseThr 0.5 \
+    --maxT 1000 \
+    --step_aware M1T0
+</div></code></pre>
+<p><strong>Key Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--NoiseThr</code></td>
+<td>Noise threshold (&gt;1 = pure motion only)</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td><code>--maxT</code></td>
+<td>Maximum diffusion timestep</td>
+<td>1000</td>
+</tr>
+<tr>
+<td><code>--step_aware</code></td>
+<td>Step-aware mode: <code>M0T0</code>, <code>M1T0</code>, <code>M0T1</code>, <code>M1T1</code></td>
+<td><code>M0T0</code></td>
+</tr>
+<tr>
+<td><code>--CLThr</code></td>
+<td>Contrastive learning threshold</td>
+<td>0.9</td>
+</tr>
+<tr>
+<td><code>--CLTemp</code></td>
+<td>Contrastive learning temperature</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td><code>--finetune</code></td>
+<td>Checkpoint to fine-tune from (optional)</td>
+<td><code>None</code></td>
+</tr>
+</tbody>
+</table>
+<p>Checkpoints are saved to <code>checkpoints/spm/</code>.</p>
+<h3 id="step-2-fine-tune-mld-with-easytune">Step 2: Fine-tune MLD with EasyTune</h3>
+<p>Fine-tune the pre-trained MLD motion generation model using the trained SPM as a reward model.</p>
+<pre class="hljs"><code><div><span class="hljs-comment"># Fine-tune with baseline methods (ReFL, DRaFT, AlignProp, DRTune)</span>
+bash run.sh 0 mld
+
+<span class="hljs-comment"># Or run directly</span>
+CUDA_VISIBLE_DEVICES=0 python -m ft_mld \
+    --cfg configs/ft_mld_t2m.yaml \
+    --spm_path your_spm_checkpoint.pth \
+    --ft_type ReFL \
+    --ft_m 20 \
+    --ft_lambda_reward 1.0
+
+<span class="hljs-comment"># Fine-tune with EasyTune (our method)</span>
+CUDA_VISIBLE_DEVICES=0 python -m ft_mld_chain \
+    --cfg configs/ft_mld_t2m.yaml \
+    --spm_path your_spm_checkpoint.pth \
+    --ft_type EZtune \
+    --ft_k 10 \
+    --ft_lambda_reward 1.0
+</div></code></pre>
+<p><strong>Key Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--spm_path</code></td>
+<td>SPM checkpoint filename (in <code>checkpoints/spm/</code>)</td>
+<td>Required</td>
+</tr>
+<tr>
+<td><code>--ft_type</code></td>
+<td>Fine-tuning method: <code>ReFL</code>, <code>DRaFT</code>, <code>DRTune</code>, <code>AlignProp</code>, <code>EZtune</code></td>
+<td>Required</td>
+</tr>
+<tr>
+<td><code>--ft_m</code></td>
+<td>Number of denoising steps for ReFL/DRTune</td>
+<td>1</td>
+</tr>
+<tr>
+<td><code>--ft_k</code></td>
+<td>Number of gradient-enabled steps for EZtune/DRaFT</td>
+<td>1</td>
+</tr>
+<tr>
+<td><code>--ft_lambda_reward</code></td>
+<td>Reward loss weight</td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="evaluation">Evaluation</h2>
+<h3 id="evaluate-fine-tuned-model">Evaluate Fine-tuned Model</h3>
+<pre class="hljs"><code><div>bash run.sh 0 <span class="hljs-built_in">eval</span>
+
+<span class="hljs-comment"># Or run directly</span>
+CUDA_VISIBLE_DEVICES=0 python -m <span class="hljs-built_in">test</span> \
+    --cfg configs/ft_mld_t2m.yaml \
+    --mld_path /path/to/finetuned_checkpoint.ckpt
+</div></code></pre>
+<h3 id="evaluate-tmr-retrieval">Evaluate TMR Retrieval</h3>
+<pre class="hljs"><code><div>bash run.sh 0 tmr
+</div></code></pre>
+<h2 id="project-structure">Project Structure</h2>
+<pre class="hljs"><code><div>EasyTune/
+├── configs/                    # Configuration files
+│   ├── ft_mld_t2m.yaml        # Fine-tuning config (HumanML3D)
+│   ├── ft_mld_kit.yaml        # Fine-tuning config (KIT-ML)
+│   ├── spm_h3d.yaml           # SPM training config (HumanML3D)
+│   ├── spm_kit.yaml           # SPM training config (KIT-ML)
+│   ├── mld_t2m.yaml           # MLD base config
+│   └── modules/               # Module-specific configs
+├── GradGuidance/               # Core EasyTune module
+│   ├── spm.py                  # Step-Aware Preference Model
+│   ├── finetune_config.py      # Fine-tuning strategy configs
+│   ├── utils.py                # Utility functions
+│   └── opt/                    # Optimized transformer components
+│       ├── attention.py
+│       ├── embeddings.py
+│       └── position_encoding.py
+├── mld/                        # MLD base model
+│   ├── config.py               # Configuration parsing
+│   ├── data/                   # Data loading and processing
+│   ├── models/                 # Model architectures
+│   ├── utils/                  # Utility functions
+│   └── transforms/             # Data transformations
+├── train_spm.py                # SPM training script
+├── train_mld.py                # MLD pre-training script
+├── ft_mld.py                   # Baseline fine-tuning script
+├── ft_mld_chain.py             # EasyTune fine-tuning script
+├── eval_tmr.py                 # TMR retrieval evaluation
+├── test.py                     # Model evaluation entry point
+├── run.sh                      # Unified run script
+└── requirements.txt            # Python dependencies
+</div></code></pre>
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>This codebase builds upon the following excellent projects:</p>
+<ul>
+<li><a href="https://github.com/ChenFengYe/motion-latent-diffusion">MLD</a> - Motion Latent Diffusion</li>
+<li><a href="https://github.com/Dai-Wenxun/MotionLCM">MotionLCM</a> - Motion Latent Consistency Model</li>
+<li><a href="https://huggingface.co/sentence-transformers/sentence-t5-large">Sentence-T5</a> - Text Encoder</li>
+</ul>
+<p>We thank the authors for their contributions to the community.</p>
+<h2 id="citation">Citation</h2>
+<p>If you find this work useful, please consider citing:</p>
+<pre class="hljs"><code><div>@inproceedings{tan2026easytune,
+  title={EasyTune: Efficient Step-Aware Fine-Tuning for Diffusion-Based Motion Generation},
+  author={Xiaofeng Tan and Wanjiang Weng and Haodong Lei and Hongsong Wang},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2026}
+}
+</div></code></pre>
+<h2 id="license">License</h2>
+<p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for details.</p>
+
+</body>
+
+</html>
